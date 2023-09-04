@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Payal Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="owner">S.P Blog</h1>
+        <p id="createBlog" onclick='hideOrShow()'>+
+
+        </p>
+    </header>
+    <section class="createBlogSection hideOrShow">
+        <form class="fillBlogForm">
+            <input type="text" name="url" class="url" placeholder="Enter Blog Post URL" required />
+            <input type="text" name='title' class="title" placeholder="Enter Blog Title" required />
+            <input type="text" name='desc' class="desc" placeholder="Enter Blog Descripation" required />
+            <textarea class='about' name="write" id="write" cols="30" rows="10" placeholder="Write."
+                required></textarea>
+            <button type="submit" class="addBlog">Add Blog</button>
+        </form>
+
+    </section>
+    <section class="blogSection">
+        <div class="blogContainer">
+            <h1 class="no_post">No Blog Post yet</h1>
+
+        </div>
+    </section>
+    <!-- <section class="card_details">
+          particularBlog.addEventListener('click', () => {
+            GlobaldataFromLs.map((item) => {
+                const particularBlogDetails = document.createElement('div');
+                particularBlogDetails.innerHTML = `
+            <div>
+                     <div>
+                        <h1>Title:${item.title}</h1>
+                        <h2>${item.desc}</h2>
+                   </div>
+                   <img src=${item.url} alt="">
+             </div>
+            <div>
+                <p>
+                   ${item.write}
+               </p>
+            </div>
+               `
+               particularBlog.appendChild(particularBlogDetails);
+            })
+
+        })
+    </section> -->
+</body>
+<script src="logic.js"></script>
+
+</html>

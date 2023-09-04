@@ -1,0 +1,4 @@
+ 1---->>>If you make form handling ->>>> then ...also meke onSubmiEvent('submit',submitHandler()) 
+          in js file ...
+ 2---->>> Because of form are refresh on new open so localstorage are again new on refresh(THEN FILL FORM )
+            because localstorage depend upon form fill
